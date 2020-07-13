@@ -29,5 +29,8 @@ class Classy(object):
                 totalpoints +=2
             elif each == "bowtie":
                 totalpoints +=4
-            elif each == "momcle":
-                totalpoints +=5   
+            elif each == "monocle":
+                totalpoints +=5  
+            else:
+                totalpoints +=0
+        return totalpoints           
