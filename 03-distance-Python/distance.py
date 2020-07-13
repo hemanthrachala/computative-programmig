@@ -10,4 +10,9 @@
 def fun_distance(x1, y1, x2, y2):
 	# your code goes here
 
-	return 0
+	distance_n = y2-y1
+	distance_d = x2-x1
+
+	distance = distance_n // distance_d
+
+	return distance 
