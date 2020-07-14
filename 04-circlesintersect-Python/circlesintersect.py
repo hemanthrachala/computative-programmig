@@ -9,9 +9,9 @@ def fun_circlesintersect(x1, y1, r1, x2, y2, r2):
 	distance_sqr = ((x1-x2)**2) + ((y1-y2)**2)
 	radiussum_sqr = (r1+r2)**2
 
-	if(distance_sqr == radiussum_sqr):
-		return False
-	elif(distance_sqr > radiussum_sqr):
-		return False		
+	if(distance_sqr < radiussum_sqr):
+		return True	
+	elif(distance_sqr == radiussum_sqr):
+		return True			
 	else:
-		return True		
+		return False	
