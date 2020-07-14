@@ -7,4 +7,8 @@
 
 def handtodice(hand):
 	# your code goes here
-	pass
+	dice= [int(x) for x in str(hand)]
+
+	dice = tuple(dice)
+
+	return dice
