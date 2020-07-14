@@ -12,5 +12,5 @@ def fun_eggcartons(eggs):
 		return 1
 	elif(eggs <= 24):
 		return 2
-	else:
+	elif(eggs > 24):
 		return 3					
