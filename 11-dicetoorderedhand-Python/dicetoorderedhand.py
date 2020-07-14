@@ -18,4 +18,9 @@ def dicetoorderedhand(a, b, c):
 	list.append(b)
 	list.append(c)
 	list.sort(reverse=True)
-	
+
+	num = ""
+	for i in list:
+		num += str(i)
+
+	return int(num)	
