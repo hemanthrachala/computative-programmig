@@ -13,4 +13,9 @@
 
 def dicetoorderedhand(a, b, c):
 	# your code goes here
-	pass
+	list = []
+	list.append(a)
+	list.append(b)
+	list.append(c)
+	list.sort(reverse=True)
+	
