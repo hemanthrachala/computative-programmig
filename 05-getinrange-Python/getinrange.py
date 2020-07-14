@@ -6,4 +6,4 @@
 
 def fun_getinrange(x, bound1, bound2):
 	# your code goes here
-	if()
+	return 0
