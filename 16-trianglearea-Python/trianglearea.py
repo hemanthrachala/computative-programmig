@@ -6,4 +6,4 @@
 
 def trianglearea(s1, s2, s3):
 	# your code goes here
-	pass
+	perimeter = (s1+s2+s3)/3
