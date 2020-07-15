@@ -31,7 +31,7 @@ class LinkedList(object):
 
     def delete_first(self):
         "Delete the first (head) element in the LinkedList as return it"
-        pass
+        delete_element = self.head
 
 class stack(object):
     def __init__(self,top=None):
