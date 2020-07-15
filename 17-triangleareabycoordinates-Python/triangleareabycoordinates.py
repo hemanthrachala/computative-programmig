@@ -9,3 +9,7 @@ def triangleareabycoordinates(x1, y1, x2, y2, x3, y3):
 	a = x1*(y2-y3)
 	b = x2*(y3-y1)
 	c = x3*(y1-y2)
+
+	area = (a+b+c)/2
+
+	return area
