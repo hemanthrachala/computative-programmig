@@ -10,3 +10,5 @@ def trianglearea(s1, s2, s3):
 	s = perimeter
 
 	area = (s*(s-s1)*(s-s2)*(s-3))
+
+	areaoftriangle = area*0.5
