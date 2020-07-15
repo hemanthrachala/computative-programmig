@@ -6,8 +6,11 @@
 
 def trianglearea(s1, s2, s3):
 	# your code goes here
-	s = (s1+s2+s3)/2
+	perimeter = (s1+s2+s3)/2
+	s = perimeter
 
-	area = (s*(s-s1)*(s-s2)*(s-3))**0.5
+	area = (s*(s-s1)*(s-s2)*(s-s3))
 
-	return area
+	areaoftriangle = area**0.5
+
+	return areaoftriangle
