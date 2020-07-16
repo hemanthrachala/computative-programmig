@@ -10,4 +10,8 @@
 
 def gcd(m, n):
 	# your code goes here
-	pass
+	e = m % n
+	if(n == 0):
+		return m
+	else:
+		return gcd(n,e)
