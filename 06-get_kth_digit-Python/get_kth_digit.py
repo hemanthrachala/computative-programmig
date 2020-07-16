@@ -15,5 +15,13 @@ def fun_get_kth_digit(digit, k):
 			return int(n[len(n)-k-1])
 		else:
 			return 0
-	else:
-		return 0			
+	elif(n < 0):
+		n = -1 *n
+		n = str(n)
+		if( k < len(n)):
+			return int(n[len(n)-k-1])
+		else:
+			return 0	
+
+
+					
