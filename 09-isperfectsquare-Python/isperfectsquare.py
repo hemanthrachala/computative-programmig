@@ -10,5 +10,5 @@ def isperfectsquare(n):
 		num = math.sqrt(n)
 		if(num-math.sqrt(n) == 0):
 			return True
-		else:
-			return False
+	else:
+		return False
