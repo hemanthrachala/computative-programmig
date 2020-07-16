@@ -7,7 +7,7 @@
 
 def fun_get_kth_digit(digit, k):
 	
-	digit = n
+	n = digit
 
 	if(n > 1):
 		n = str(n)
