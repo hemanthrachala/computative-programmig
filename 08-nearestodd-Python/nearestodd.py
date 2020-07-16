@@ -9,6 +9,9 @@ def fun_nearestodd(n):
 	
 	n = n/2
 	num = int(n) 
-	
+	if(n%2 == 0) :
+		return (num*2) - 1
+	else:
+		return (num*2) + 1	
 
 
