@@ -9,4 +9,10 @@
 
 def numberofpoolballs(rows):
 	# Your code goes here
-	pass
+	n = rows
+
+	# basically its like sum of n numbers 
+
+	balls = n*(n+1)/2
+
+	return balls
