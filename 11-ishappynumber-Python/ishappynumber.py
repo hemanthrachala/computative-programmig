@@ -16,4 +16,14 @@
 
 def ishappynumber(n):
 	# your code goes here
-	pass
+	def squares_sum(num):
+
+		sum = 0
+
+		while(num>0):
+			rem = num % 10
+			sum = sum + (rem * rem)
+			num = num // 10
+		return sum
+
+
