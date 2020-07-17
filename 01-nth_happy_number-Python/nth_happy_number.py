@@ -35,5 +35,5 @@ def isHappyNumber(n):
 
 def fun_nth_happy_number(n):
 	
-	happynum = [i for i in range(10) if isHappyNumber(i)]
+	happynum = [i for i in range(50) if isHappyNumber(i)]
 	return happynum[n]
