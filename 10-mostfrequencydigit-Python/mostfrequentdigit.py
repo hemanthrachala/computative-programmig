@@ -12,7 +12,7 @@ def mostfrequentdigit(n):
 		if(n[0] <= n[1]):
 			return int(n[0])
 		else:
-			return n[1]	
+			return int(n[1])
 	else:
 		intial = -1
 		c = 0
