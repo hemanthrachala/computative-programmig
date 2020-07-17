@@ -11,5 +11,26 @@
 # assert(nthHappyNumber(7) == 31)
 
 
+def isHappyNumber(n):
+
+	def squares_sum(num):
+		sum = 0
+
+		while ( num > 0):
+			rem = num % 10
+			sum = sum + (rem*rem)
+			num = num // 10
+		return sum
+	l = []
+
+	if squares_sum(n) not in l:
+		res = squares_sum(res)		 
+
+
+
+
+
+
+
 def fun_nth_happy_number(n):
 	return 0
