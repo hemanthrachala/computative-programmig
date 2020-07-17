@@ -26,4 +26,7 @@ def ishappynumber(n):
 			num = num // 10
 		return sum
 
+	l = []
 
+	if squares_sum(n) not in l:
+		res = squares_sum(n)
