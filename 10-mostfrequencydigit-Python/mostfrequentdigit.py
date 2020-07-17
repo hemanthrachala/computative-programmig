@@ -10,7 +10,7 @@ def mostfrequentdigit(n):
 		return n
 	elif(len(n) == 2):
 		if(n[0] <= n[1]):
-			return n[0]
+			return int(n[0])
 		else:
 			return n[1]	
 	else:
