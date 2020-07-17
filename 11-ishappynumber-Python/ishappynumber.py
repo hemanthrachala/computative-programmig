@@ -28,10 +28,11 @@ def ishappynumber(n):
 
 	l = []
 
-	if squares_sum(n) not in l:
+	while squares_sum(n) not in l:
 		res = squares_sum(n)
 		if res == 1:
 			return True
 		else:
 			l.append(res)
 			n = res
+	return False
