@@ -24,7 +24,7 @@ def isHappyNumber(n):
 	l = []
 
 	while squares_sum(n) not in l:
-		res = squares_sum(res)
+		res = squares_sum(n)
 		if res == 1:
 			return True
 		else:
