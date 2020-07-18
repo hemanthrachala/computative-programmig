@@ -9,10 +9,13 @@ def median(a):
 
 	a.sort()
 
-	if length == 1:
+	if length == 0:
+		return None
+
+	elif length == 1:
 		return a[0]
 
-	if length % 2 == 0:
+	elif length % 2 == 0:
 		m1 = a[length//2]
 		m2 = a[length//2 -1]
 		m = (m1+m2)/2
