@@ -9,6 +9,7 @@ def removeduplicate(text):
 
 	for each in text:
 		if each in duplicate:
-			continue
+			pass
 		else:
 			duplicate += each
+	return duplicate		
