@@ -7,4 +7,15 @@
 
 def issorted(a):
 	# your code goes here
-	pass
+	sort = False
+
+	num = 1
+
+	while num < len(a):
+
+		if a[num] < a[num -1]:
+			sort = True
+
+		num +=1
+	if not sort:
+		return True	 
