@@ -6,4 +6,7 @@
 
 def isrotated(str1, str2):
 	#Your code goes here
-	pass
+	if str(str2) in str(str1)*3:
+		return True
+	else:
+		return False		
