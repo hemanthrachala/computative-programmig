@@ -18,13 +18,17 @@ def fun_applycaesarcipher(msg, shift):
 
 		each_char = msg[i]
 
-		if each_char == " ":
+		if each_char == "":
 
 			change = change + " "
 
 		elif each_char.islower():
 
 			change += chr((ord(each_char) + shift - 97 ) % 26 + 97)
+
+		elif each_char.isupper():
+
+			change += chr((ord(each_char) + shift - 65 ) % 26 + 65)
 
 	return change
 
