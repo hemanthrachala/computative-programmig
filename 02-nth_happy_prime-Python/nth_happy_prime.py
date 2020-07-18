@@ -26,7 +26,7 @@ def isHappyNumber(n):
 		return False
 
 def is_prime(num):
-	if num >= 1 :
+	if num > 1 :
 		for i in range(2,num):
 			if (num % i == 0):
 				return False
@@ -37,5 +37,5 @@ def is_prime(num):
 
 def fun_nth_happy_prime(n):
 	
-	l = [i for i in range(100) if (isHappyNumber(i) and is_prime(i))]
-	return l.__getitem__(n)
+	lis = [i for i in range(100) if (isHappyNumber(i) and is_prime(i))]
+	return lis.__getitem__(n)
