@@ -5,4 +5,10 @@
 
 def removeduplicate(text):
 	# Your code goes here
-	pass
+	duplicate = ""
+
+	for each in text:
+		if each in duplicate:
+			continue
+		else:
+			duplicate += each
