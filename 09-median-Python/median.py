@@ -8,4 +8,15 @@ def median(a):
 	length = len(a)
 
 	a.sort()
-	
+
+	if length == 1:
+		return a[0]
+
+	if length % 2 == 0:
+		m1 = a[length//2]
+		m2 = a[length//2 -1]
+		m = (m1+m2)/2
+	else:
+		m = a[length//2]
+
+	return m	
