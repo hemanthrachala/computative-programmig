@@ -11,7 +11,21 @@
 
 
 def fun_applycaesarcipher(msg, shift):
-	return ""
+	
+	change =""
+
+	for i in range(len(msg)):
+
+		each_char = msg[i]
+
+		if each_char == " ":
+
+			change = change + " "
+
+		# elif each_char.isupper():
+
+
+
 
 
 
