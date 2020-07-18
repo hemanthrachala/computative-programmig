@@ -18,7 +18,7 @@ def fun_applycaesarcipher(msg, shift):
 
 		each_char = msg[i]
 
-		if each_char == "":
+		if each_char == " ":
 
 			change = change + " "
 
