@@ -24,7 +24,7 @@ def fun_applycaesarcipher(msg, shift):
 
 		elif each_char.isupper():
 
-			change += chr((ord(each_char) + shift - 65 ))
+			change += chr((ord(each_char) + shift - 65 ) % 26 + 65)
 
 
 
