@@ -17,5 +17,10 @@ def issorted(a):
 			sort = True
 
 		num +=1
+
 	if not sort:
+
 		return True	 
+
+	else:
+		return False	
