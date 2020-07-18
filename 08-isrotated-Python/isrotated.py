@@ -8,7 +8,7 @@ def isrotated(str1, str2):
 	#Your code goes here
 	if str(str2) in str(str1)*2 or str1 == str2:
 		return True
-	if len(str(str1)) != len(str(str2)):
+	if len(str1) != len(str2):
 		return False	
 	else:
 		return False		
