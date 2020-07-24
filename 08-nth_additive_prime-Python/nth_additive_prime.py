@@ -13,5 +13,7 @@ def is_prime(num):
 	else:
 		return True				
 
+
 def fun_nth_additive_prime(n):
-	pass
+	l = [i  for i in range(50) if is_prime(i)]
+	return l[n]
