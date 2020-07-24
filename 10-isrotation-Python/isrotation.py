@@ -9,3 +9,7 @@ def isrotation(x, y):
 	# Your code goes here
 	if len(str(x)) != len(str(y)):
 		return False
+	if str(y) in str(x)*2 :
+		return True
+	else:
+		return False
