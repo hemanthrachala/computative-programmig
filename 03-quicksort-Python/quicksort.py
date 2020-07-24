@@ -14,7 +14,9 @@ def quicksort(array):
 		for i in arr:
 			if i < pi:
 				low.append(i)
-			if i > pi:
+			elif i == pi:
+				same.append(i)	
+			elif i > pi:
 				high.append(i)	
 		return low + high
 
