@@ -3,4 +3,16 @@ Input a list.
 Output a sorted list."""
 def quicksort(array):
 	# Your code goes here
-	pass
+	arr = array
+
+	low = []
+	same =[]
+	high = []
+
+	if len(arr) > 1:
+		pi = arr[0]
+		for i in arr:
+			if i < pi:
+				low.append(i)
+			if i > pi:
+				high.append(i)		
