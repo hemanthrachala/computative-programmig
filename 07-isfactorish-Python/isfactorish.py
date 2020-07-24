@@ -19,6 +19,8 @@ def fun_isfactorish(n):
 		return False
 	elif num[0] == num[1] or num[1] == num[2] or num[2] == num[0]:
 		return False
+	elif num.count('0') > 0 :
+		return False 	
 	else:
 		return True	
 
