@@ -18,12 +18,17 @@ class HashTable(object):
         string is already in the table.
         Return -1 otherwise."""
         # Your code goes here
-        pass
+        if string not in self.table:
+            return ord(string[0]) * 100 + ord(string[1])
+        else:
+            return -1    
 
     def calculate_hash_value(self, string):
         """Helper function to calulate a
         hash value from a string."""
         # Your code goes here
-        if string not in self.table:
-            return ord(string[0]) * 100 + ord(string[1])
+
+        hash = ord(string[0]) * 100 + ord(string[1])
+        return hash
+            
 
