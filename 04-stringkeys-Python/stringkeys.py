@@ -19,9 +19,9 @@ class HashTable(object):
         Return -1 otherwise."""
         # Your code goes here
         if string not in self.table:
-            return ord(string[0]) * 100 + ord(string[1])
-        else:
-            return -1    
+            return -1
+        else:    
+            return ord(string[0]) * 100 + ord(string[1])    
 
     def calculate_hash_value(self, string):
         """Helper function to calulate a
