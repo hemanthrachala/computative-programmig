@@ -19,5 +19,5 @@ def is_palindrome(num):
 	return num == int(t_num[::-1])
 
 def fun_nth_palindromic_prime(n):
-	l = [ i for i in range(50000) if is_prime(i) and is_palindrome(i)]
+	l = [ i for i in range(13000) if is_prime(i) and is_palindrome(i)]
 	return l[n]
