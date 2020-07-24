@@ -11,7 +11,7 @@ def is_prime(num):
 				return False
 		return True
 	else:
-		return True				
+		return False				
 
 def is_additive(num):
 	if(is_prime(num)):
@@ -24,7 +24,7 @@ def is_additive(num):
 		else:
 			return False	
 	else:
-		return True
+		return False
 def fun_nth_additive_prime(n):
 	l = [i  for i in range(500) if is_additive(i)]
 	return l[n]
