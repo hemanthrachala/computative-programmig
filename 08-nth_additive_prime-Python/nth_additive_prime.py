@@ -13,6 +13,16 @@ def is_prime(num):
 	else:
 		return True				
 
+def is_additive(num):
+	if(is_prime(num)):
+		num = str(num)
+		sum = 0
+		for i in num:
+			sum = sum + int(i)
+			if is_prime(sum):
+				return True
+			else:
+				return False	
 
 def fun_nth_additive_prime(n):
 	l = [i  for i in range(50) if is_prime(i)]
