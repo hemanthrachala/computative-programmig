@@ -10,10 +10,14 @@ def is_prime(num) :
 		for i in range(2,num):
 			if num % i == 0:
 				return False
-		else:
-			return True
+		return True
+	else:
+		return False		
 
-
+def is_palindrome(num):
+	t_num = str(num)
+	return num == int(t_num[::-1])
 
 def fun_nth_palindromic_prime(n):
-	return 0
+	l = [ i for i in range(500) if is_prime(i) and is_palindrome(i)]
+	return l[n]
