@@ -19,11 +19,12 @@ def is_additive(num):
 		sum = 0
 		for i in num:
 			sum = sum + int(i)
-			if is_prime(sum):
-				return True
-			else:
-				return False	
-
+		if is_prime(sum):
+			return True
+		else:
+			return False	
+	else:
+		return True
 def fun_nth_additive_prime(n):
-	l = [i  for i in range(50) if is_prime(i)]
+	l = [i  for i in range(500) if is_additive(i)]
 	return l[n]
