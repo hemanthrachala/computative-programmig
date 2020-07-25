@@ -11,7 +11,7 @@ def fun(l,flag):
 
 			return l[0] + fun(l[1:], False)	
 		else:
-			return l[0] + fun(l[1:], True)
+			return -l[0] + fun(l[1:], True)
 
 def fun_recursions_alternatingsum(l): 
 	flag = True
