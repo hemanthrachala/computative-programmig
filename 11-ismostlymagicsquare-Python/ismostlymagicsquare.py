@@ -18,7 +18,7 @@ def ismostlymagicsquare(a):
 	listt = []
 	listt.append(sum(a[0]))
 	listt.append(sum(a[1]))
-	# listt.append(sum(a[2]))
+	listt.append(sum(a[2]))
 	listt = list(set(listt))
 	print(listt)
 
