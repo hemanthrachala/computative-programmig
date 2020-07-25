@@ -5,4 +5,5 @@
 
 
 def fun_recursions_alternatingsum(l): 
-	return 0
+	flag = True
+	return fun(l)
