@@ -4,8 +4,14 @@
 # (that is, 3). If L is empty, return 0. You may not use loops/iteration in this problem.
 
 def fun(l,flag):
-	pass
+	if len(l) == 0:
+		return 0
+	else:
+		if flag:
 
+			return l[0] + fun(l[1:], False)	
+		else:
+			return l[0] + fun(l[1:], True)
 
 def fun_recursions_alternatingsum(l): 
 	flag = True
