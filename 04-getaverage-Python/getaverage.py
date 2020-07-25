@@ -15,11 +15,15 @@ def fun_getaverage(s):
 	s = 0
 	c = 0
 
+	if c == 0:
+		return float(0)
+
 	for i in l:
 		if i.isdigit():
 			if i.isdigit() > 0:
 				s = s + int(i)
 				c = c + 1
+				
 	return float(s/c)				 
 
 
