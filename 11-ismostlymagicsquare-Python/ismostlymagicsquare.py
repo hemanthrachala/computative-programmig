@@ -15,4 +15,6 @@
 
 def ismostlymagicsquare(a):
 	# Your code goes here
-	pass
+	listt = []
+	listt.append(sum(a[0]))
+	print(listt)
