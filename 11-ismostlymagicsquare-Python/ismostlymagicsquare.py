@@ -21,3 +21,8 @@ def ismostlymagicsquare(a):
 	listt.append(sum(a[2]))
 	listt = list(set(listt))
 	print(listt)
+
+	if len(listt) == 1:
+		return True
+	else:
+		False	
