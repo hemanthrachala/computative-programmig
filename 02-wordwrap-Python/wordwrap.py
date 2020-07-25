@@ -21,9 +21,9 @@ def fun_wordwrap(s, n):
 	strgg = ""
 	for i in range(len(strg)):
 		if i % n == 0 and i > 0:
-			strgg = "\n"+ strg[i]
+			strgg += "\n"+ strg[i]
 		else:
-			strgg = strg + strg[i] +""
+			strgg = strgg + strg[i] +""
 	return strgg			
 
 
