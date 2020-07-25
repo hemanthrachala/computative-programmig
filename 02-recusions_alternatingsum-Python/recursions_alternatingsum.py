@@ -3,7 +3,10 @@
 # rather than added. For example: alternatingSum([1,2,3,4,5]) returns 1-2+3-4+5 
 # (that is, 3). If L is empty, return 0. You may not use loops/iteration in this problem.
 
+def fun(l,flag):
+	pass
+
 
 def fun_recursions_alternatingsum(l): 
 	flag = True
-	return fun(l)
+	return fun(l, flag)
