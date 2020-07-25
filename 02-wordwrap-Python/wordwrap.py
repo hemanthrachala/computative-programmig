@@ -19,12 +19,12 @@
 def fun_wordwrap(s, n):
 	strg = s.strip().replace(" ","-")
 	strgg = ""
-	for i in range(len(strgg)):
-		if i % n == 0:
-			strgg = "\n" + strg[i]
+	for i in range(len(strg)):
+		if i % n == 0 :
+			strgg = "\n"+ strg[i]
 		else:
-			strg = strg + strg[i] +""
-	return strg			
+			strgg = strg + strg[i] +""
+	return strgg			
 
 
  
