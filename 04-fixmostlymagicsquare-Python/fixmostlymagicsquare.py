@@ -9,3 +9,8 @@
 def fixmostlymagicsquare(L):
 	pass
 	# Your code goes here
+	lst = []
+	for i in L:
+		c = 0
+		c += sum(i)
+		lst.append(c)
