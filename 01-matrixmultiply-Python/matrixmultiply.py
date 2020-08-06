@@ -5,10 +5,13 @@
 
 
 def fun_matrixmultiply(m1, m2):
+
     a = m1 
     b = m2
     c = [[0 for _ in range(len(b[0]))] for _ in range(len(a))]
 
+    if(len(a[0]) != len(b)):
+        return None
     for i in range(len(a)):
         for j in range(len(b[0])):
             p = 0 
