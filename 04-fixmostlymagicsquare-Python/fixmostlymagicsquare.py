@@ -7,7 +7,6 @@
 
 
 def fixmostlymagicsquare(L):
-	pass
 	# Your code goes here
 	lst = []
 	for i in L:
