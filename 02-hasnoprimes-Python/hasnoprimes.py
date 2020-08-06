@@ -7,7 +7,7 @@ def is_prime(n):
 
 def fun_hasnoprimes(l):
 	lst = [j for i in l for j in i]
-	lsts = list(set(lst))
+	lst = list(set(lst))
 
 	for i in lst:
 		if (is_prime(i)):
