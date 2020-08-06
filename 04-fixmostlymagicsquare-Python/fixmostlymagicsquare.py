@@ -21,4 +21,5 @@ def fixmostlymagicsquare(L):
 		maxx = max(lst)
 		for i in lst:
 			if i == maxx:
-				indx = lst.index(max(lst))	
+				indx = lst.index(max(lst))
+		d = L[indx]			
