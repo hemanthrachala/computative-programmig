@@ -5,4 +5,9 @@
 
 def hasduplicates(L):
 	# Your code goes here
-	pass
+	lst = [ j for sub in L for j in sub]
+	lsts = list(set(lst))
+
+	if len(lst) == len(lsts):
+		return True
+	return False	
