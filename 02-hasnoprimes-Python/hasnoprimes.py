@@ -3,16 +3,19 @@
 
 
 def is_prime(n):
-	pass
-
+	if n > 1:
+		for i in range(2,n):
+			if(n%i == 0):
+				return False
+			return True
+	return False		
 def fun_hasnoprimes(l):
 	lst = [j for i in l for j in i]
-	lst = list(set(lst))
+	lsts = list(set(lst))
 
-	for i in lst:
-		if (is_prime(i)):
+	for i in lsts:
+		if (is_prime(int(i))):
 			return False
-	else:
-		return True			
+		return True	
 
 
