@@ -9,5 +9,5 @@ def hasduplicates(L):
 	lsts = list(set(lst))
 
 	if len(lst) == len(lsts):
-		return True
-	return False	
+		return False
+	return True	
