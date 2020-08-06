@@ -5,8 +5,16 @@
 
 
 def fun_matrixmultiply(m1, m2):
-    return None
+    a = m1 
+    b = m2
+    c = [[0 for _ in range(len(b[0]))] for _ in range(len(a))]
 
+    for i in range(len(a)):
+        for j in range(len(b[0])):
+            p = 0 
+            for k in range(a[0]):
+                p += a[i][k] * b[k][j]
+                print(p)
 
 
 
