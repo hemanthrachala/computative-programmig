@@ -12,7 +12,7 @@ def fun_matrixmultiply(m1, m2):
     for i in range(len(a)):
         for j in range(len(b[0])):
             p = 0 
-            for k in range(a[0]):
+            for k in range(len(a[0])):
                 p += a[i][k] * b[k][j]
                 print(p)
             c[i][j] = p
