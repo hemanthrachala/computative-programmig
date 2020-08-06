@@ -16,7 +16,7 @@ def is_even(n):
 
 		t= n % 10 
 		if n % 2 == 0:
-			return is_even(n//10) + temp	
+			return is_even(n//10)*10 + t	
 		else:
 			return is_even(n//10)	
 
