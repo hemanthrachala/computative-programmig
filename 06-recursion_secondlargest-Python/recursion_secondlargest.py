@@ -16,7 +16,8 @@
 def recursion_secondlargest(L):
 	# Your code goes here
 	l = L
-	
+	if len(l) <=0:
+		return None
 	largest = l[0]
 	slargest = None
 	for i in l[1:]:
