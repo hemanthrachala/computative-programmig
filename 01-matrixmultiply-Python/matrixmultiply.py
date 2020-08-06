@@ -15,6 +15,6 @@ def fun_matrixmultiply(m1, m2):
             for k in range(a[0]):
                 p += a[i][k] * b[k][j]
                 print(p)
-
-
+            c[i][j] = p
+    return c
 
