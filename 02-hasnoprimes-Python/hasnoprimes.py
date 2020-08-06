@@ -2,6 +2,17 @@
 # and returns True if L does not contain any primes, and False otherwise.
 
 
+def is_prime(n):
+	pass
+
 def fun_hasnoprimes(l):
-	return True
+	lst = [j for i in l for j in i]
+	lsts = list(set(lst))
+
+	for i in lst:
+		if (is_prime(i)):
+			return False
+	else:
+		return True			
+
 
