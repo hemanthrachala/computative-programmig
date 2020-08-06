@@ -16,3 +16,12 @@
 def recursion_secondlargest(L):
 	# Your code goes here
 	pass
+	largest = l[0]
+	slargest = None
+	for i in l[1:]:
+		if i > largest:
+			slargest = largest
+			largest = i
+		elif slargest == None or i > slargest:
+			slargest = i
+	return slargest			
