@@ -14,3 +14,8 @@ def fixmostlymagicsquare(L):
 		c = 0
 		c += sum(i)
 		lst.append(c)
+
+	if len(lst) != len(set(lst)):
+		dif = max(lst) - min(lst)
+
+		maxx = max(lst)	
