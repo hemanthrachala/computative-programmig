@@ -4,7 +4,7 @@
 # of 3 exist, you should return the empty list. You may not use loops/iteration in this problem. 
 
 def helper(n,c,el):
-	if n <= 0:
+	if n < 1:
 		return el
 	else:	
 		n = n // 3
@@ -14,6 +14,9 @@ def helper(n,c,el):
 
 def recursion_powersof3ton(n):
 	# Your code goes here
+	if int(n) <= 0:
+		return None
+
 	el = []
 
 	c = -1
