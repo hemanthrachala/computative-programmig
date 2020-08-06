@@ -24,4 +24,4 @@ def fun_recursion_onlyevendigits(l):
 	if not l:
 		return []
 	else:
-		return [is_even(0)] + fun_recursion_onlyevendigits(l[1:])	
+		return [is_even(l[0])] + fun_recursion_onlyevendigits(l[1:])	
