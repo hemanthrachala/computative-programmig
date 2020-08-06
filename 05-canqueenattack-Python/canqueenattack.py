@@ -8,7 +8,12 @@ def canqueenattack(qR, qC, oR, oC):
 	r = qR
 	c = qC
 	r1 = oR
-	r2 = oC
+	c1 = oC
 
 	if r == r1:
 		return True
+	if c == c1:
+		return True
+	if abs(r-r1) == abs(c-c1):
+		return True	
+	return False	
