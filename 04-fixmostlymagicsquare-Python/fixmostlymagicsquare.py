@@ -18,4 +18,7 @@ def fixmostlymagicsquare(L):
 	if len(lst) != len(set(lst)):
 		dif = max(lst) - min(lst)
 
-		maxx = max(lst)	
+		maxx = max(lst)
+		for i in lst:
+			if i == maxx:
+				indx = lst.index(max(lst))	
