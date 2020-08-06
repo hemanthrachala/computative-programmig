@@ -12,7 +12,7 @@ def fun_numberofpoolballrows(balls):
 	for i in range(1,balls):
 		ball += i
 		c += 1
-		if ball > balls:
-			return count
+		if ball >= balls:
+			return c
 	else:
 		return balls		
