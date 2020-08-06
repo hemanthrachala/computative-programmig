@@ -18,9 +18,12 @@
 # Hint: Do not slice the list L, but rather adjust the indexes into L. 
 
 def helper(oL,v,f,l,lst):
+
+	if(f > l):
+		return lst
     
 	mid = (f + l) // 2
-	lst += [mid, oL[mid]]
+	lst += [(mid, oL[mid])]
 
 	if oL[mid] == v :
 		return lst
@@ -28,13 +31,15 @@ def helper(oL,v,f,l,lst):
 		if v < oL[mid]:
 			newlast = mid - 1
 			return helper(oL,v,f,newlast,lst)
-
+		else:
+			newfirst = mid + 1
+			return helper(oL,v,newfirst,l,lst)
 
 
 def recursion_binarysearchvalues(L, v):
 	# Your codes goes here
 	f = 0
-	l = 0
+	l = len(L) - 1
 	lst = []
 
 	return helper(L,v,f,l,lst)
