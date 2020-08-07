@@ -5,7 +5,6 @@
 # the nth number with Property309.
 
 def iswith309(num):
-	pass
 	i = 0
 	num = num**5
 	temp = num
@@ -26,7 +25,7 @@ def iswith309(num):
 def nthwithproperty309(n):
 	# Your code goes here
 	num = n
-	i = 0
+	i = -1
 	guess = 0
 
 	while i < num :
