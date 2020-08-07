@@ -4,6 +4,9 @@
 # Write the function nthWithProperty309 that takes a non-negative int n and returns 
 # the nth number with Property309.
 
+def iswith309(num):
+	pass
+
 def nthwithproperty309(n):
 	# Your code goes here
 	num = n
