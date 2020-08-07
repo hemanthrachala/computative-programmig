@@ -6,4 +6,35 @@
 # as does longestDigitRun(-677886).
 def longestdigitrun(n):
 	# Your code goes here
-	pass
+
+	longstrun = 1
+	longstdrun = n % 10
+	crun = 1
+	index = n
+
+	c = 0
+
+	while index != 0:
+		index = index // 10
+		c += 1
+
+	if c == 1:
+		return 1
+
+	for i in range(c):
+		temp1 = n % 10
+		n = n // 10
+		temp2 = n % 10
+
+		if temp1 == temp2:
+			crun += 1
+		elif crun > longstrun:
+			longstrun = crun
+			longstdrun = temp1
+			crun = 1
+		elif crun == longstrun :
+			longstdrun = temp1 
+			crun = 1
+		else:
+			crun = 1
+	return longstdrun			
