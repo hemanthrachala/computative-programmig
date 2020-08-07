@@ -24,11 +24,11 @@ def iswith309(num):
 
 def nthwithproperty309(n):
 	# Your code goes here
-	num = n
+	
 	i = -1
 	guess = 0
 
-	while i < num :
+	while i < n :
 		guess += 1
 
 		if iswith309(guess):
