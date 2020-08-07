@@ -14,7 +14,7 @@ def iswith309(num):
 
 		if i != num % 10:
 			num = num // 10
-		else:
+		elif i == num % 10:
 			c += 1
 			num = temp
 			i += 1 
