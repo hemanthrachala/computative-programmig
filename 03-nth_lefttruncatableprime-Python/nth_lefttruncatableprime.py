@@ -10,5 +10,37 @@
 
 import math
 
+def isprime(n):
+    if n > 1:
+        for i in range(2,n):
+            if n % i == 0:
+                return False
+        return True
+    else:
+        return False                   
+
+def dcount(n):
+    n = abs(n)
+    c = 1
+    while n > 10:
+        n = n // 10
+        c += 1
+    return c
+
+def ltp(n):
+    if isprime(n) == False or str(n).__contains__("0"):
+        return False
+    d = dcount(n)
+    for i in range(1,d):
+        k = n % (10 ** i)
+        if isprime(k) == False:
+            return False
+    return True            
+
 def fun_nth_lefttruncatableprime(n):
-    return 1
+    list = []
+    for i in range(4000):
+        if ltp(i):
+            list.append(i)
+    print(list)
+    return list[n]          
