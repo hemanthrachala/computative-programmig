@@ -9,5 +9,33 @@
 
 import math
 
+
+def iskasperkar(num):
+    if num <=0:
+        return False
+    sqr = num ** 2
+    if sqr < 10:
+        if sqr == num:
+            return True
+
+    numm = math.ceil(math.log(sqr,10))
+    c = 1
+    while c < numm:
+        num1 = sqr % 10 ** c
+        num2 = sqr // 10 ** c
+
+        if num1 == 0:
+            c +=1
+            continue
+        if num1 + num2 == num:
+            return True
+            
+        c += 1
+    return False        
+
 def fun_nth_kaprekarnumber(n):
-    return 1;
+    list = []
+    for i in range(100000):
+        if iskasperkar(i):
+            list.append(i)
+    return list[n]        
