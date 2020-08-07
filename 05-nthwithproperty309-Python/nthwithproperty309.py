@@ -6,6 +6,22 @@
 
 def iswith309(num):
 	pass
+	i = 0
+	num = num**5
+	temp = num
+	c = 0
+
+	while num > 0:
+
+		if i != num % 10:
+			num = num // 10
+		else:
+			c += 1
+			num = temp
+			i += 1 
+			if c > 9:
+				return True
+			return False	 	
 
 def nthwithproperty309(n):
 	# Your code goes here
