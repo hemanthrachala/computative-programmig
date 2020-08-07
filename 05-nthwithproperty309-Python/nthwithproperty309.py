@@ -6,4 +6,13 @@
 
 def nthwithproperty309(n):
 	# Your code goes here
-	pass
+	num = n
+	i = 0
+	guess = 0
+
+	while i < num :
+		guess += 1
+
+		if iswith309(guess):
+			i += 1
+	return guess		
