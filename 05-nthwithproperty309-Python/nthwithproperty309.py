@@ -20,7 +20,7 @@ def iswith309(num):
 			i += 1 
 			if c > 9:
 				return True
-			return False	 	
+	return False	 	
 
 def nthwithproperty309(n):
 	# Your code goes here
