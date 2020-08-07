@@ -32,7 +32,7 @@ def longestdigitrun(n):
 			longstrun = crun
 			longstdrun = temp1
 			crun = 1
-		elif crun == longstrun :
+		elif crun == longstrun  and temp1 < longstdrun:
 			longstdrun = temp1 
 			crun = 1
 		else:
